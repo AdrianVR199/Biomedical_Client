@@ -1,0 +1,115 @@
+.perfil-body {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  /* box-shadow: 5px 0px 10px #8888; */
+  flex-direction: row-reverse;
+  z-index: 0;
+  position: fixed;
+  align-content: center;
+  align-items: flex-end;
+}
+
+.perfil-container {
+  background-color: #ffffff;
+  width: 81%;
+  height: 91%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.perfil-container-info {
+  height: 98%;
+  width: 98%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 2px 0px 8px #afafaf88;
+}
+
+.P-img-perfil {
+  height: 80px;
+  width: 80px;
+
+  object-fit: cover;
+  border-radius: 50%;
+}
+.P-form-head {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 25%;
+  margin-left: 5%;
+}
+
+.P-titulos-reg {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  height: 10%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 5%;
+  align-items: center;
+}
+
+.P-form-reg {
+  height: 65%;
+  width: 90%;
+  background-color: rgb(255, 255, 255);
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.P-form-reg Form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.P-form-reg-p {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.P-bfield-n {
+  padding-right: 15px;
+  margin: 0;
+  border-right: 1.5px solid #bdd258;
+}
+
+.P-reg-input-bfield {
+  width: 30%;
+  height: 88%;
+}
+.P-bfild2 {
+  width: 35%;
+}
+
+.botones-perfil {
+  display: flex;
+  justify-content: space-between;
+  width: 87%;
+  margin-top: 10%;
+  column-gap: 1px;
+}
+
+@media (max-width: 1150px) {
+  .botones-perfil {
+    flex-direction: column;
+    gap: 2px;
+  }
+}

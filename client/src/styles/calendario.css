@@ -1,0 +1,78 @@
+:root {
+  --fc-today-bg-color: rgba(157, 159, 167, 0.147);
+}
+
+.fc-miBoton-button {
+  background-color: #47b733 !important;
+  color: #fff !important;
+  border: 1px solid #a4652e !important;
+}
+
+.fc-boton1-button {
+  background-color: #34747e !important;
+  color: #fff !important;
+  border: 1px solid #a42e57 !important;
+}
+.fc .fc-toolbar.fc-header-toolbar {
+  margin-bottom: 5px !important;
+}
+
+.fc .fc-button-primary {
+  background-color: #ffffff;
+  border-color: #c0c0c0;
+  color: #484848;
+}
+.fc-prev-button,
+.fc-prevYear-button,
+.fc-next-button,
+.fc-nextYear-button {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  color: #484848 !important;
+}
+.fc-prev-button,
+.fc-prevYear-button,
+.fc-next-button,
+.fc-nextYear-button,
+.fc .fc-button-primary:not(:disabled):active:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 0rem rgb(99 175 40 / 50%) !important;
+}
+.fc-toolbar-title {
+  text-align: center;
+  font-size: 18px !important;
+  font-weight: normal;
+}
+
+.fc .fc-today {
+  background-color: #e0e0e0 !important;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active,
+.fc .fc-button-primary:not(:disabled):active {
+  background-color: #05b5ce !important ;
+  border-color: #05b5ce !important  ;
+  color: #fff;
+}
+.fc .fc-button-primary:not(:disabled).fc-button-active:focus,
+.fc .fc-button-primary:not(:disabled):active:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 0rem rgb(99 175 40 / 50%) !important;
+}
+.fc .fc-button-primary:disabled {
+  background-color: #909090;
+  border-color: #fff;
+  color: #fff;
+}
+
+.fc .fc-button-primary:hover {
+  background-color: #82dae7 !important ;
+  border-color: #82dae7 !important  ;
+  color: #fff;
+}
+
+
+
+.fc-event:hover {
+  cursor: pointer;
+}

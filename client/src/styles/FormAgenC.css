@@ -1,0 +1,12 @@
+.F-A-popupcont-cita{
+    display: flex;
+    flex-direction: row;
+}
+.F-A-botones-popup{
+    margin-top: 25px;
+  display: flex;
+  height: 10%;
+  /* width: 50%; */
+  justify-content: flex-end;
+  gap: 5px;
+}

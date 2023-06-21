@@ -1,0 +1,60 @@
+.citas-body{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    /* box-shadow: 5px 0px 10px #8888; */
+    flex-direction: row-reverse;
+    z-index: 0;
+    position: fixed;
+    align-content: center;
+    align-items: flex-end;
+}
+
+.citas-container{
+    background-color: #ffffff;
+    width: 81%;
+    height: 91%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.citas-container-info{
+    height: 98%;
+    width: 98%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 2px 0px 8px #afafaf88;
+    display: flex;
+    justify-content: center;
+}
+
+.listado-container{
+    height: 90%;
+    width: 80%;
+    display: flex;
+    /* align-content: center; */
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+
+}
+
+.list-cont-titulo {
+    margin-left: -42px;
+}
+
+.list-cont-titulo h1{
+    font-size: 18px;
+    font-weight: 100;
+}
+.list-cont-lista{
+    height: 100%;
+}
+
