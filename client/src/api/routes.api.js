@@ -1,5 +1,6 @@
 import axios from "axios";
 //const serverName="localhost:8080";
+import httpAdapter from "axios"
 const serverName="ec2-3-83-2-193.compute-1.amazonaws.com";
 
 const port="4000";
@@ -8,6 +9,7 @@ export const loginUserRequest = async (user) =>
   await axios({
     method: "POST",
     data: user,
+    adapter: httpAdapter,
     withCredentials: true,
     url: `https://${serverName}/auth/signin`,
 // url: "https://localhost:4000/auth/signin",
