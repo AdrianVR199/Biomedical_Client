@@ -1,6 +1,6 @@
 import axios from "axios";
 //const serverName="localhost:8080";
-const serverName="ec2-3-83-2-193.compute-1.amazonaws.com:443";
+const serverName="ec2-3-83-2-193.compute-1.amazonaws.com";
 
 const port="4000";
 //logearse en la aplicacion
