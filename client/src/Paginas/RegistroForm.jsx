@@ -617,18 +617,6 @@ function RegistroForm() {
                           width: "45%",
                           height: "15%",
                           display: "-webkit-inline-box",
-                          ".MuiOutlinedInput-notchedOutline": {
-                            border: 1,
-                            borderColor: "#d2d2d2",
-                          },
-                          "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-                            border: 1,
-                            borderColor: "#d2d2d2",
-                          },
-                          "&:hover .MuiOutlinedInput-notchedOutline": {
-                            border: 1,
-                            borderColor: "#d2d2d2",
-                          },
                         }}
                         isOptionEqualToValue={(option, ciuSelectedre) =>
                           option.value === ciuSelectedre.value
@@ -642,7 +630,7 @@ function RegistroForm() {
                             {...params}
                             label="ciudad residencia"
                             variant="outlined"
-                            disabled
+                            
                             size="small"
                             InputLabelProps={{
                               classes: {
