@@ -532,7 +532,7 @@ function RegistroForm() {
                             {...params}
                             label="ciudad nacimiento"
                             variant="outlined"
-                            focused
+                            
                             size="small"
                             InputLabelProps={{
                               classes: {
@@ -597,7 +597,7 @@ function RegistroForm() {
                             {...params}
                             label="Departamento residencia"
                             variant="outlined"
-                            focused
+                            
                             size="small"
                             InputLabelProps={{
                               classes: {
@@ -630,7 +630,7 @@ function RegistroForm() {
                             {...params}
                             label="ciudad residencia"
                             variant="outlined"
-                            focused
+                            
                             size="small"
                             InputLabelProps={{
                               classes: {
