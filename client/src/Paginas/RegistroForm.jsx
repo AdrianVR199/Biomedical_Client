@@ -499,7 +499,7 @@ function RegistroForm() {
                             {...params}
                             label="Departamento nacimiento"
                             variant="outlined"
-                            focused
+                            
                             size="small"
                             InputLabelProps={{
                               classes: {
