@@ -159,7 +159,7 @@ function EditCita() {
   const handleSubmit = (values, initV) => {
     setOpenPopup(true);
 
-    const changedFields = {};
+    const changedFields = { ...citaToUpdate };
     values.fecha_reg = formatDate(value);
     values.tipo_cita = idValue;
     values.id_doctor = idValuedoc;
@@ -170,6 +170,7 @@ function EditCita() {
         changedFields[key] = values[key];
       }
       setuserChanged(changedFields);
+      console.log(changedFields)
     });
   };
   //listado de doctores
