@@ -500,7 +500,7 @@ function EditPerfilP() {
                           label="Departamento de nacimiento"
                           variant="outlined"
                           size="small"
-                          focused
+                          
                           InputLabelProps={{
                             classes: {
                               focused: "my-custom-focus-label",
@@ -533,7 +533,7 @@ function EditPerfilP() {
                           label="Ciudad de nacimiento"
                           variant="outlined"
                           size="small"
-                          focused
+                          
                           InputLabelProps={{
                             classes: {
                               focused: "my-custom-focus-label",
@@ -596,7 +596,7 @@ function EditPerfilP() {
                           label="Departamento de residencia"
                           variant="outlined"
                           size="small"
-                          focused
+                          
                           InputLabelProps={{
                             classes: {
                               focused: "my-custom-focus-label",
@@ -628,7 +628,7 @@ function EditPerfilP() {
                           {...params}
                           label="Ciudad de residencia"
                           variant="outlined"
-                          focused
+                          
                           size="small"
                           InputLabelProps={{
                             classes: {
