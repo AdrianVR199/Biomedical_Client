@@ -102,7 +102,7 @@ function PacientePview() {
 
   function renderUpdated() {
     if (usuariohist.descripcion === "1") return <p>No hay registro</p>;
-    return <p>Actualizado el:{usuariohist.fecha_reg_hist}</p>;
+    return <p>Actualizado el:{formatDate1(usuariohist.fecha_reg_hist)}</p>;
   }
   function renderUpdatedBy() {
     if (usuariohist.descripcion === "1") return <p></p>;
