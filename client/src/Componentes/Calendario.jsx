@@ -142,6 +142,13 @@ function Calendario() {
       (event) => event.extendedProps.id_doctor === filterValue
     );
   };
+  handleNavigate = () => {
+    if (usuario.id_tipo_usuario === 2) {
+      navigate(`/paciente/${infovalue.extendedProps.id_paciente}`);
+    } else if (usuario.id_tipo_usuario === 3) {
+      navigate(`/Perfilpaciente/${infovalue.extendedProps.id_paciente}`);
+    }
+  };
 
   return (
     <div style={{ height: "98%" }}>
@@ -440,11 +447,7 @@ function Calendario() {
                 form="form-registro-p"
                 onClick={() => {
                   if (infovalue.extendedProps) {
-                    if (usuario.id_tipo_usuario === 2) {
-                      navigate(`/paciente/${infovalue.extendedProps.id_paciente}`);
-                    } else if(usuario.id_tipo_usuario === 3) {
-                      navigate(`/Perfilpaciente/${infovalue.extendedProps.id_paciente}`);
-                    }
+                    handleNavigate();
                   }
                 }}
                 sx={{
