@@ -29,7 +29,7 @@ function Calendario() {
       const contentlist = await getCitasCompletas();
       const uinfo = await getUsuarioinfo();
       setUsuario(uinfo.data);
-      console.log(uinfo.data.id_tipo_usuario)
+
       setlistcitas(contentlist);
     };
     getlistCitas();
@@ -143,12 +143,13 @@ function Calendario() {
       (event) => event.extendedProps.id_doctor === filterValue
     );
   };
-  const handleNavigate = () => {
-    console.log(usuario.id_tipo_usuario,"cosito")
-    if (usuario.id_tipo_usuario === 2) {
-      navigate(`/paciente/${infovalue.extendedProps.id_paciente}`);
-    } else if (usuario.id_tipo_usuario === 3) {
-      navigate(`/Perfilpaciente/${infovalue.extendedProps.id_paciente}`);
+  const handleNavigate = (info, idu) => {
+    if (info) {
+      if (idu === 2) {
+        navigate(`/paciente/${infovalue.extendedProps.id_paciente}`);
+      } else if (idu === 3) {
+        navigate(`/Perfilpaciente/${infovalue.extendedProps.id_paciente}`);
+      }
     }
   };
 
@@ -447,11 +448,12 @@ function Calendario() {
                 variant="contained"
                 type="submit"
                 form="form-registro-p"
-                onClick={() => {
-                  if (infovalue.extendedProps) {
-                    handleNavigate();
-                  }
-                }}
+                onClick={() =>
+                  handleNavigate(
+                    infovalue.extendedProps,
+                    usuario.id_tipo_usuario
+                  )
+                }
                 sx={{
                   width: "40%",
                   color: "biomedical.white",
