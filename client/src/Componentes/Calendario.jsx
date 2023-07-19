@@ -440,9 +440,11 @@ function Calendario() {
                 form="form-registro-p"
                 onClick={() => {
                   if (infovalue.extendedProps) {
-                    navigate(
-                      `/paciente/${infovalue.extendedProps.id_paciente}`
-                    );
+                    if (usuario.id_tipo_usuario === 2) {
+                      navigate(`/paciente/${infovalue.extendedProps.id_paciente}`);
+                    } else if(usuario.id_tipo_usuario === 3) {
+                      navigate(`/Perfilpaciente/${infovalue.extendedProps.id_paciente}`);
+                    }
                   }
                 }}
                 sx={{
