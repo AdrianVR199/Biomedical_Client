@@ -143,6 +143,7 @@ function Calendario() {
     );
   };
   const handleNavigate = () => {
+    console.log(usuario.id_tipo_usuario,"cosito")
     if (usuario.id_tipo_usuario === 2) {
       navigate(`/paciente/${infovalue.extendedProps.id_paciente}`);
     } else if (usuario.id_tipo_usuario === 3) {
