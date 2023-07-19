@@ -37,7 +37,7 @@ function ListadoPacientes() {
     if (objetoEncontrado) {
       if (userID === 2) {
         navigate(`/paciente/${objetoEncontrado.usuario_id}`);
-      } else {
+      } else if(userID === 3) {
         navigate(`/Perfilpaciente/${objetoEncontrado.usuario_id}`);
       }
     }
