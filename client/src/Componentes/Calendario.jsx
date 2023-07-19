@@ -29,6 +29,7 @@ function Calendario() {
       const contentlist = await getCitasCompletas();
       const uinfo = await getUsuarioinfo();
       setUsuario(uinfo.data);
+      console.log(uinfo.data.id_tipo_usuario)
       setlistcitas(contentlist);
     };
     getlistCitas();
