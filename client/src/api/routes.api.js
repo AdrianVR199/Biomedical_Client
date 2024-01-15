@@ -1,7 +1,9 @@
 import axios from "axios";
 //const serverName="localhost:4000";
 //import httpsAdapter from "axios"
-const serverName="52.5.165.124";
+//const serverName="52.5.165.124";
+const serverName="34.206.41.141";
+
 
 const port="4000";
 //logearse en la aplicacion

@@ -142,7 +142,7 @@ describe("Peticiones desde el cliente", () => {
 
     console.log(result);
     expect(result.status).toBe(200);
-    expect(result.data).toEqual(expect.any(Array)); // Check if the response is an array
+    expect(result.data).toEqual(expect.any(Array)); 
     expect(result.data.every((obj) => typeof obj === "object")).toBe(true);
   });
 });
