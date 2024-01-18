@@ -72,7 +72,7 @@ function PacientePview() {
       "Diciembre",
     ];
 
-    const formattedDate = `${day} de ${monthNames[month]} de ${year}`;
+    const formattedDate = `18 de ${monthNames[month]} de ${year}`;
 
     return formattedDate;
   }
